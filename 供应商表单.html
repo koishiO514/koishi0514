@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>供应商表单</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+		 
+		<!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<style>
+		label.xrequired::after{
+			content: '*';
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1><i class="fa fa-building" style="color: royalblue;"></i>新增供应商</h1>
+			<hr>
+			<div class="mb-3 mt-3">
+				<label for="uname" class="form-label xrequired" style="color: grey;">供应商名称</label>
+				<input name="uname" type="text" class="form-control" placeholder="请输入供应商名称 "/>
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="code" class="form-label xrequired" style="color: grey;">统一信用代码</label>
+				<input name="code" type="text" class="form-control" placeholder="请输入统一信用代码 "/>
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="address" class="form-label xrequired" style="color: grey;">地址</label>
+				<textarea name="address" class="form-control" placeholder="请输入地址 "></textarea>
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="rd" class="form-label xrequired" style="color: grey;">是否合格</label>
+				<br>
+				<input type="radio" name="rd" class="form-check-input"/>是
+				<input type="radio" name="rd" class="form-check-input"/>否
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="name" class="form-label" style="color: grey;">联系人</label>
+				<input name="name" type="text" class="form-control" placeholder="请输入联系人姓名 "/>
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="tele" class="form-label" style="color: grey;">电话</label>
+				<input name="tele" type="text" class="form-control" placeholder="请输入联系人电话 "/>
+			</div>
+			<div class="mb-4 mt-3">
+				<label for="uname" class="form-label xrequired" style="color: grey;">供应商类型</label>
+				<select class="form-select">
+					<option>请选择供应商类型</option>
+					<option>111</option>
+				</select>
+				
+			</div>
+			<div class="mb-3 mt-3">
+				<input type="checkbox" class="form-check-input"/>是否为金牌供应商
+			</div>
+			<div class="mb-3 mt-3">
+				<label for="address" class="form-label" style="color: grey;">备注</label>
+				<textarea name="address" class="form-control" placeholder="请输入备注信息 "></textarea>
+			</div>
+			<div style="float: right;" class="mb-3 mt-4">
+				<button class="btn btn-secondary"><i class="fa fa-times" style="color: white;"></i>取消</button>
+				<button class="btn btn-primary"><i class="fa fa-save" style="color: white;"></i>保存</button>
+			</div>
+		</div>
+			
+	</body>
+</html>
