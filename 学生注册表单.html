@@ -40,7 +40,7 @@
 			 if(email!="")
 			 {
 				let emailReg=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-				if(!emailReg.test(name))
+				if(!emailReg.test(email))
 				{
 					document.getElementById("erroremail").innerHTML="邮箱格式不正确！";
 				}
@@ -65,7 +65,7 @@
 			
 		</script>
 		<style>
-			.error_message{
+			。error_message{
 				color: red;
 			}
 			
@@ -73,7 +73,7 @@
 				content: ' *';
 				color: red;
 			}
-			.registration-form {
+			。registration-form {
 				max-width: 500px;
 				width: 100%;
 			}
@@ -122,3 +122,4 @@
 		</form>
 	</body>
 </html>
+
