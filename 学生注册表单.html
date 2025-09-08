@@ -23,7 +23,7 @@
 			 //名字验证
 			  event.preventDefault();
 			 let name=document.getElementById("name").value;
-			 let nameReg=/^\w{2,10}$/;
+			 let nameReg=/^[\u4e00-\u9fa5\w]{2,10}$/;
 			 if(!nameReg.test(name))
 			 {
 				document.getElementById("errorname").innerHTML="名字太短或太长！";
@@ -47,7 +47,7 @@
 			}
 			 //密码验证
 			 let pw=document.getElementById("password").value;
-			 let pwReg=/^(?=[A-Za-z])(?=[.*\d]).{6,}$/;
+			 let pwReg=/^(?=[A-Za-z])(?=.*\d).{6,}$/;
 			 if(!pwReg.test(pw))
 			 {
 			 	document.getElementById("errorpw").innerHTML="密码格式不正确(字母+数字不小于6个字)";
@@ -57,7 +57,7 @@
 			 let pw1=document.getElementById("password1").value;
 			 if(pw1!=pw)
 			 {
-				document.getElementById("errorpw1").innerHTML="确认密码与密码相同！";
+				document.getElementById("errorpw1").innerHTML="确认密码与密码要相同！";
 				return false;
 			 }
 			 return true;
